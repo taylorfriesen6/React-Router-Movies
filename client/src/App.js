@@ -10,6 +10,7 @@ import {
 
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
+import Movie from './Movies/Movie';
 
 export default function App () {
   const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
@@ -43,7 +44,7 @@ export default function App () {
         {/* <div>Replace this Div with your Routes</div> */}
         <Switch>
           <Route path='/movies/:id'>
-
+            <Movie/>
           </Route>
           <Route path='/'>
             <MovieList movies={movieList}/>
